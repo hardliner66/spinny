@@ -112,12 +112,15 @@ fn draw(app: &mut App, gfx: &mut Graphics, state: &mut State) {
     // Reset the transformation stack
     draw.transform().clear();
 
-    draw.text(&state.font, &format!("{}", (state.rot / angle.to_degrees()).round()))
-        .position(50.0, 10.0)
-        .size(30.0)
-        .color(Color::WHITE)
-        .h_align_center()
-        .v_align_middle();
+    draw.text(
+        &state.font,
+        &format!("{}", (state.rot / angle.to_degrees()).round()),
+    )
+    .position(50.0, 10.0)
+    .size(30.0)
+    .color(Color::WHITE)
+    .h_align_center()
+    .v_align_middle();
 
     // Render the frame
     gfx.render(&draw);

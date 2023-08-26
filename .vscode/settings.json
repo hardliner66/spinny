@@ -2,5 +2,9 @@
     "editor.formatOnType": true,
     "[lisp]": {
         "editor.wordSeparators": "`|;:'\",()"
-    }
+    },
+    "cSpell.words": [
+        "consts",
+        "notan"
+    ]
 }
